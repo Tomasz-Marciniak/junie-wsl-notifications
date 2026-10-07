@@ -1,5 +1,10 @@
 # Junie WSL notifications
 
+> [!WARNING]
+> **Deprecated: use the [`wsl-notifications` marketplace extension](https://github.com/upfera/junie-extensions/tree/main/extensions/wsl-notifications) instead.** Do not install this standalone hook alongside the marketplace extension; both can register the same events and cause duplicate notifications. This standalone installer is retained only to help existing users clean up.
+>
+> Before installing the marketplace extension, run `./uninstall.sh` from a clone, or run `./install.sh uninstall`. If any old hook remains, remove only `~/.junie/hooks/notify-send.sh` and its matching entry invoking `~/.junie/hooks/notify-send.sh` in `~/.junie/config.json`. Preserve unrelated hooks and settings.
+
 Notifications for Junie CLI hooks running in WSL. The installer preserves unrelated entries in `~/.junie/config.json`, supports repeated installs and provides a matching uninstall command.
 
 ## Install
